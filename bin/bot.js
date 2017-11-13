@@ -16,10 +16,14 @@ const { DB } = require('../lib/word');
  */
 
 // parse-server
+
 const parseServer = new ParseInstance({
   databaseURI: process.env.DATABASE_URI,
+
   cloud: process.env.CLOUD_CODE_MAIN,
+
   appId: process.env.APP_ID,
+
   masterKey: process.env.MASTER_KEY,
   serverURL: process.env.SERVER_URL,
   port: process.env.PARSE_PORT,
