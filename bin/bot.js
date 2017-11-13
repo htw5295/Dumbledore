@@ -15,6 +15,7 @@ const { DB } = require('../lib/word');
  *  BOT_GITHUB_CHANNEL_ID: If your team uses a github slack channel for alerts, The Gitub Channel Id goes here.
  */
 
+
 // parse-server
 
 const parseServer = new ParseInstance({
