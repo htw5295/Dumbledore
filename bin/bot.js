@@ -15,11 +15,16 @@ const { DB } = require('../lib/word');
  *  BOT_GITHUB_CHANNEL_ID: If your team uses a github slack channel for alerts, The Gitub Channel Id goes here.
  */
 
+
 // parse-server
+
 const parseServer = new ParseInstance({
   databaseURI: process.env.DATABASE_URI,
+
   cloud: process.env.CLOUD_CODE_MAIN,
+
   appId: process.env.APP_ID,
+
   masterKey: process.env.MASTER_KEY,
   serverURL: process.env.SERVER_URL,
   port: process.env.PARSE_PORT,
